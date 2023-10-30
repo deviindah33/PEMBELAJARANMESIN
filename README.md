@@ -1,6 +1,6 @@
 # Laporan Proyek Machine Learning
 ### Nama : Devi Indah Sari 
-### Nim : 211351044
+### Nim : 21135104
 ### Kelas : Pagi B
 
 ## Domain Proyek
@@ -127,7 +127,10 @@ lalu menampilkan 5 df setelah proses encoding selesai
 ``` bash
 df.head()
 ```
+
+## Modeling
 Selanjutnya kita akan membuat Model Decision Tree dan melihat akurasi data training dan testing, Matriks konfusi dicetak menggunakan confusion_matrix, dan elemen-elemen matriks konfusi seperti True Negative , False Positive, False Negative, dan True Positive  dihitung dan dicetak. classification_report yang memberikan informasi tentang presisi, recall, F1-score, dan lain-lain untuk setiap kelas yang ada dalam data pengujian.
+
 ``` bash
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 from sklearn.tree import DecisionTreeClassifier
@@ -152,6 +155,8 @@ confusion = confusion_matrix(y_test, dtc.predict(x_test))
 tn, fp, fn, tp = confusion.ravel()
 print(f"classification report : \n {classification_report(y_test, dtc.predict(x_test))}")
 ```
+
+## Evaluasi
 disini kita akan melakukan prediksi apakah seorang pasien terkena HIV atau tidak.
 ``` bash
 input_data = (22,5,0,0,1,0,0,2,2)
