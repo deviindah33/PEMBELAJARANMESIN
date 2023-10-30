@@ -1,6 +1,6 @@
 # Laporan Proyek Machine Learning
 ### Nama : Devi Indah Sari 
-### Nim : 21135104
+### Nim : 211351044
 ### Kelas : Pagi B
 
 ## Domain Proyek
