@@ -155,6 +155,8 @@ confusion = confusion_matrix(y_test, dtc.predict(x_test))
 tn, fp, fn, tp = confusion.ravel()
 print(f"classification report : \n {classification_report(y_test, dtc.predict(x_test))}")
 ```
+akurasi data training = 0.7831541218637993
+akurasi data testing = 0.75 
 
 ## Evaluasi
 disini kita akan melakukan prediksi apakah seorang pasien terkena HIV atau tidak.
